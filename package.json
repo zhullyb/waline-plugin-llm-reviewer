@@ -1,9 +1,14 @@
 {
   "name": "waline-plugin-llm-reviewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a Waline plugin that use openai-compatible LLM API to review comments",
   "main": "index.js",
-  "keywords": ["Waline", "plugin", "OpenAI", "comment"],
+  "keywords": [
+    "Waline",
+    "plugin",
+    "OpenAI",
+    "comment"
+  ],
   "author": "zhullyb <zhullyb@outlook.com",
   "license": "MIT"
 }
