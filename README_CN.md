@@ -32,6 +32,7 @@ module.exports = Waline({
 
 ## 环境变量
 
+- `ASISMET_KEY`: Waline 使用的反垃圾评论服务，**建议设置为 `false` 以禁用**。
 - `OPENAI_BASE_URL`: API 基础 URL。例如 `https://api.openai.com`
 - `OPENAI_MODEL`: 模型名称。例如 `gpt-4o-mini`
 - `OPENAI_API_KEY`: API 密钥。例如 `ak-xxxxxx`

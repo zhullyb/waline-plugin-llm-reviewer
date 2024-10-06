@@ -32,6 +32,7 @@ module.exports = Waline({
 
 ## Environment Variables
 
+- `ASISMET_KEY`: Anti-spam comment service used by Waline, **it is recommended to set it to `false` to disable**.
 - `OPENAI_BASE_URL`: API base URL. e.g. `https://api.openai.com`
 - `OPENAI_MODEL`: Model name. e.g. `gpt-4o-mini`
 - `OPENAI_API_KEY`: API key. e.g. `ak-xxxxxx`
