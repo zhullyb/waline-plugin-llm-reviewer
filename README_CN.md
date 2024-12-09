@@ -7,28 +7,37 @@
 
 ## 如何安装
 
-```bash
+``` bash
 npm install waline-plugin-llm-reviewer
 ```
 
 ## 如何使用
 
-```javascript
-// index.js
+编辑Waline文件：
+
+### index.js
+
+``` javascript
 const Waline = require('@waline/vercel');
 const GPTReviewer = require('waline-plugin-llm-reviewer');
 
 module.exports = Waline({
   plugins: [
-    GptReviewer({
+    GPTReviewer({
         openaiBaseUrl: process.env.OPENAI_BASE_URL,
         openaiModel: process.env.OPENAI_MODEL,
         openaiApiKey: process.env.OPENAI_API_KEY,
-        openaiPrompt: process.env.OPENAI_PROMPT,
+        prompt: process.env.OPENAI_PROMPT,
     })
   ]
 });
 ```
+
+### package.json
+
+将新的 package.json（必需）和 package-lock.json（可选）上传到 github
+
+或者将 `"waline-plugin-llm-reviewer": "^0.0.2"` 添加到 package.json 依赖项中
 
 ## 环境变量
 
@@ -37,6 +46,8 @@ module.exports = Waline({
 - `OPENAI_MODEL`: 模型名称。例如 `gpt-4o-mini`
 - `OPENAI_API_KEY`: API 密钥。例如 `ak-xxxxxx`
 - `OPENAI_PROMPT`(可选): 模型的提示。例如 `这是一个评论审查: `
+
+更改环境变量后点击“重新部署”。
 
 ## 许可证
 
