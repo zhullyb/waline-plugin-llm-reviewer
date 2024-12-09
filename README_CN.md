@@ -3,7 +3,7 @@
 一个 Waline 插件，使用 openai 兼容的 LLM API 来审查评论。
 
 ***
-> [English README](//README.md)
+> [English README](/README.md)
 
 ## 如何安装
 

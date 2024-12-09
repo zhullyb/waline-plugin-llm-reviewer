@@ -3,7 +3,7 @@
 a Waline plugin that use openai-compatible LLM API to review comments.
 
 ***
-> [中文 README](//README_CN.md)
+> [中文 README](/README_CN.md)
 
 ## How to Install
 
