@@ -27,7 +27,7 @@ module.exports = Waline({
         openaiBaseUrl: process.env.OPENAI_BASE_URL,
         openaiModel: process.env.OPENAI_MODEL,
         openaiApiKey: process.env.OPENAI_API_KEY,
-        prompt: process.env.OPENAI_PROMPT,
+        openaiPrompt: process.env.OPENAI_PROMPT,
     })
   ]
 });
@@ -35,9 +35,7 @@ module.exports = Waline({
 
 ### package.json
 
-将新的 package.json（必需）和 package-lock.json（可选）上传到 github
-
-或者将 `"waline-plugin-llm-reviewer": "^0.0.2"` 添加到 package.json 依赖项中
+将 `"waline-plugin-llm-reviewer": "latest"` 添加到 package.json 依赖项中。
 
 ## 环境变量
 

@@ -1,10 +1,10 @@
-module.exports = function ({ openaiBaseUrl, openaiModel, openaiApiKey, prompt }) {
+module.exports = function ({ openaiBaseUrl, openaiModel, openaiApiKey, openaiPrompt }) {
     if (!openaiBaseUrl || !openaiModel || !openaiApiKey) {
       return {};
     }
   
-    if (!prompt) {
-      prompt = 'You are a review bot. Your task is to review the comments according to following rules: \
+    if (!openaiPrompt) {
+      openaiPrompt = 'You are a review bot. Your task is to review the comments according to following rules: \
       1. Any contact information should not be included, including qq number, email, phone number, etc. \
       2. Any content with advertising or sensitive information should not be included. \
       3. Any other content that is not suitable for public display should not be included. \
@@ -24,7 +24,7 @@ module.exports = function ({ openaiBaseUrl, openaiModel, openaiApiKey, prompt })
           messages: [
             {
               role: 'system',
-              content: prompt
+              content: openaiPrompt
             },
             {
               role: 'user',

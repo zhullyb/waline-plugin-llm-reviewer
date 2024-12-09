@@ -27,7 +27,7 @@ module.exports = Waline({
         openaiBaseUrl: process.env.OPENAI_BASE_URL,
         openaiModel: process.env.OPENAI_MODEL,
         openaiApiKey: process.env.OPENAI_API_KEY,
-        prompt: process.env.OPENAI_PROMPT,
+        openaiPrompt: process.env.OPENAI_PROMPT,
     })
   ]
 });
@@ -35,9 +35,7 @@ module.exports = Waline({
 
 ### package.json
 
-Upload New package.json(required) and package-lock.json(optional) to github
-
-Or add `"waline-plugin-llm-reviewer": "^0.0.2"` into package.json dependencies
+Add `"waline-plugin-llm-reviewer": "latest"` into package.json dependencies.
 
 ## Environment Variables
 
